@@ -1,0 +1,85 @@
+% Packages
+\usepackage{amssymb,amsmath,amsthm,bbm}
+\usepackage{verbatim,float,url,dsfont}
+\usepackage{graphicx,subcaption,psfrag}
+\usepackage{algorithm,algorithmicx,algpseudocode}
+\usepackage{mathtools,enumitem}
+\usepackage{multirow}
+\usepackage{ragged2e}
+\usepackage{xr-hyper}
+\usepackage{array}
+
+\usepackage[colorlinks=true,citecolor=blue,urlcolor=blue,linkcolor=blue]{hyperref}
+\usepackage[margin=1in]{geometry}
+\usepackage[round]{natbib}
+
+\usepackage[utf8]{inputenc} % allow utf-8 input
+\usepackage[T1]{fontenc}    % use 8-bit T1 fonts
+\usepackage{booktabs}       % professional-quality tables
+\usepackage{nicefrac}         % compact symbols for 1/2, etc.
+\usepackage{microtype}      % microtypography
+
+\ifdefined\TimesFont 
+\usepackage{times} % use times font
+\fi
+
+\ifdefined\ParSkip 
+\usepackage{parskip} % use par skip
+\fi
+
+
+\newcommand{\1}{\mathbbm{1}}
+\newcommand{\E}{\mathbb{E}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\T}{\mathbb{T}}
+\newcommand{\X}{\mathbb{X}}
+\newcommand{\calA}{\mathcal{A}}
+\newcommand{\calB}{\mathcal{B}}
+\newcommand{\calC}{\mathcal{C}}
+\newcommand{\calD}{\mathcal{D}}
+\newcommand{\calF}{\mathcal{F}}
+\newcommand{\calG}{\mathcal{G}}
+\newcommand{\calH}{\mathcal{H}}
+\newcommand{\calL}{\mathcal{L}}
+\newcommand{\calN}{\mathcal{N}}
+\newcommand{\calP}{\mathcal{P}}
+\newcommand{\calX}{\mathcal{X}}
+\newcommand{\bfX}{\mathbf{X}}
+\newcommand{\bfx}{\mathbf{x}}
+\newcommand{\btheta}{\boldsymbol{\theta}}
+
+\newcommand{\wt}[1]{{\widetilde{#1}}}
+\newcommand{\wh}[1]{{\widehat{#1}}}
+\newcommand{\sign}[0]{\operatorname{sgn}}
+\newcommand{\tran}{^{\top}} % transpose of a matrix or a vector
+\newcommand{\ra}{\rightarrow}
+\newcommand{\Ra}{\Rightarrow}
+\newcommand{\pd}[2]{\frac{\partial #1}{\partial #2}}
+\newcommand{\minima}[1]{\underset{#1}{\arg\min}}
+
+%% Norms %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\abs}[1]{|#1|}
+\newcommand{\Babs}[1]{\Big|#1\Big|}
+\newcommand{\norm}[2]{|#1|_{#2}}
+\newcommand{\bnorm}[2]{\big|#1\big|_{#2}}
+\newcommand{\Bnorm}[2]{\Big|#1\Big|_{#2}}
+\newcommand{\Norm}[2]{\|#1\|_{#2}}
+\newcommand{\bNorm}[2]{\big\|#1\big\|_{#2}}
+\newcommand{\BNorm}[2]{\Big\|#1\Big\|_{#2}}
+\newcommand{\pair}[2]{\langle #1,#2 \rangle}
+\newcommand{\Bpair}[2]{\Big\langle #1,#2 \Big\rangle}
+\newcommand{\ave}[1]{\langle #1\rangle}
+\newcommand{\Ave}[1]{\Big\langle #1\Big\rangle}
+
+%% probability and statistics %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\var}{\operatorname{Var}}
+\newcommand{\cov}{\operatorname{Cov}}
+\newcommand{\ind}{\mathrel{\perp\!\!\!\perp}}
+\newcommand{\iid}{\stackrel{\operatorname{iid}}{\sim}}
+\newcommand{\unif}{\operatorname{UNIF}}
+\newcommand{\ber}{\operatorname{Ber}}
+\newcommand{\bin}{\operatorname{Bin}}
+\newcommand{\poi}{\operatorname{Poi}}
+\newcommand{\exp}{\operatorname{Exp}}
